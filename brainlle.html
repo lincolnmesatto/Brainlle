@@ -1,0 +1,75 @@
+
+
+<html>
+    <head>
+        <title>Brainlle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+
+        <link rel="stylesheet" href="brainlle.css">
+        <script src="brainlle.js"></script>
+    </head>
+
+    <body>
+        <h1 id="title">
+            <img src="img/B.png">
+            <img src="img/R.png">
+            <img src="img/A.png">
+            <img src="img/I.png">
+            <img src="img/N.png">
+            <img src="img/L.png">
+            <img src="img/L.png">
+            <img src="img/E.png">
+        </h1>
+
+        <hr>
+
+        <p><span id="spanPlacar" onclick="abrirModalInfo()">INFORMAÇÔES</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="spanPlacar" onclick="abrirModalPlacar()">PLACAR</span> </p>
+
+        <br>
+        
+        <div id="board">
+        </div>
+
+        <div id="warning"></div>
+
+        <div id=keyboard>
+            <br>
+            
+        </div>
+        <br>
+        <div id="answer"></div>
+
+        <div id="modalPlacar" class="modal">
+          <div class="modal-content">
+            <span id="closePlacar" class="close">&times;</span>
+            <p id="result"></p>
+          </div>
+        </div>
+
+         <div id="modalInfo" class="modal">
+          <div class="modal-content">
+            <span id="closeInfo" class="close">&times;</span>
+            <p>
+              As letras dispostas no padrão dos teclados QWERTY  
+            </p>
+            <p>
+                Descubra a palavra certa em 6 tentativas. Depois de cada tentativa, as peças mostram o quão perto você está da solução.
+            </p>
+            <p style="color: #6AAA64">
+                Letras destacadas com essa cor significam que fazem parte da palavra e estão na posição certa.
+            </p>            
+            <p style="color: #C9B458">
+                Letras destacadas com essa cor significam que fazem parte da palavra, mas não estão na posição certa.
+            </p>
+            <p style="color: #E74C3C">
+                Letras destacadas com essa cor significam que não fazem parte da palavra.
+            </p>
+            <p>
+                <img src="img/0_reset.png" width="25px" height="25px"> <span>Esse ícone reseta o jogo, resetar um jogo já iniciado resulta em uma derrota.</span>
+            </p>
+            <p><b>ATENÇÂO: </b>Atualizar a página (F5) reseta o placar.</p>
+          </div>
+        </div>
+    </body>
+</html>
